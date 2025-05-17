@@ -23,7 +23,7 @@ public class PaintableRegion : MonoBehaviour
         Debug.Log(correct);
         if (selected == correct)
         {
-            StartCoroutine(FillEffect(selected));
+            StartCoroutine(FillEffect(new Color(selected.r, selected.g, selected.b, 0)));
         }
     }
 
